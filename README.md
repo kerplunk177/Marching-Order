@@ -1,6 +1,6 @@
 # Marching Order for Foundry VTT
 
-A simple and intuitive module for Foundry VTT that allows the Game Master to set a party's marching order and for players to easily view it. No configuration required—just install and go.
+A simple and intuitive module for Foundry VTT that allows the Game Master to set a party's marching order and for players to easily view it.
 
 ![Latest Version](https://img.shields.io/badge/version-2.1.0-blue)
 ![Foundry Version](https://img.shields.io/badge/Foundry%20VTT-v13-informational)
@@ -16,17 +16,6 @@ A simple and intuitive module for Foundry VTT that allows the Game Master to set
 * **Player View**: A simple, read-only window for players to see the current marching order.
 * **Chat Macro**: A ready-to-use macro to post the current marching order to the chat for everyone to see.
 * **Keybinding Support**: GMs can set a custom keybind to quickly open the marching order tool.
-
----
-
-## Installation
-
-1.  Inside Foundry VTT, go to the **Add-on Modules** tab in the Configuration and Setup screen.
-2.  Click **Install Module**.
-3.  In the "Manifest URL" field, paste the following URL:
-    `[YOUR_MODULE_MANIFEST_URL_HERE]`
-4.  Click **Install** and wait for the installation to complete.
-5.  Enable the module in your game world's module settings.
 
 ---
 
