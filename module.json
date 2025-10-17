@@ -1,0 +1,28 @@
+{
+  "id": "marching-order",
+  "title": "Marching Order",
+  "description": "A simple interface for the GM to set and view the party's marching order.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "authors": [
+    {
+      "name": "Sean Wright"
+    }
+  ],
+  "scripts": [
+    "scripts/marching-order.js"
+  ],
+  "styles": [
+    "styles/marching-order.css"
+  ],
+  "templates": [
+    "templates/marching-order-template.hbs",
+    "templates/player-marching-order-template.hbs"
+  ],
+  "flags": {
+    "canUpload": true
+  }
+}

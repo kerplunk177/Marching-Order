@@ -1,0 +1,13 @@
+<div class="marching-order-player-view">
+    <ol class="actor-list">
+        {{#each orderedActors}}
+        <li class="actor-entry">
+            <img src="{{this.img}}" class="actor-icon" />
+            <span class="actor-name">{{this.name}}</span>
+        </li>
+        {{/each}}
+    </ol>
+    {{#unless orderedActors}}
+        <p class="notes">The Game Master has not set a marching order yet.</p>
+    {{/unless}}
+</div>

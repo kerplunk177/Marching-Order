@@ -1,0 +1,37 @@
+<div class="marching-order-container">
+    {{#if hasAvailableActors}}
+    <div class="column">
+        <h3>Available Characters</h3>
+        <div class="actor-list">
+            {{#each unorderedActors}}
+            <div class="actor-entry draggable" data-actor-id="{{this.id}}" draggable="true">
+                <img src="{{this.img}}" class="actor-icon" />
+                <span class="actor-name">{{this.name}}</span>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+
+    <div class="column">
+        <h3>Marching Order</h3>
+        <div class="actor-list droppable">
+            {{#each orderedActors}}
+            <div class="actor-entry draggable" data-actor-id="{{this.id}}" draggable="true">
+                <img src="{{this.img}}" class="actor-icon" />
+                <span class="actor-name">{{this.name}}</span>
+                <a class="remove-actor"><i class="fas fa-times"></i></a>
+            </div>
+            {{/each}}
+        </div>
+        <button type="button" class="clear-order">
+            <i class="fas fa-trash"></i> Clear Order
+        </button>
+    </div>
+
+    {{else}}
+    <div class="column single-column">
+        <p class="notes"><i class="fas fa-users-slash fa-2x"></i></p>
+        <p class="notes">No player-owned actors found in this world.</p>
+    </div>
+    {{/if}}
+</div>
